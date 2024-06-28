@@ -1,1 +1,71 @@
 /* Ini CSS */
+
+main {
+    padding: 32px;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+
+    /* For image icon */
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.Eu08-jIB3t4MF1dF29yQGAHaHa&pid=Api&P=0&h=180);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner-container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+
+    /* For image icon */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-1 {
+    background-image: url(../assets/1.jpeg);
+}
+
+.profile-2 {
+    background-image: url(../assets/2.jpeg);
+}
+
+.profile-3 {
+    background-image: url(../assets/3.jpeg);
+}
+
+.divider {
+    flex: 2;
+}
