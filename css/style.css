@@ -7,8 +7,11 @@ main {
 
 .nav-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
 }
 
 .logo-icon {
@@ -22,8 +25,8 @@ main {
 }
 
 nav>a {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 1px solid;
 }
 
