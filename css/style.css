@@ -4,9 +4,13 @@ main {
     padding: 32px;
 }
 
+body {
+    background-color: rgb(15, 8, 37);
+}
 
+/* Navigation Bar */
 .nav-container {
-    background-color: white;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -22,17 +26,17 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-family: 'Segoe UI', sans-serif;
-    color: #191919;
+    color: rgb(51, 80, 122);
     font-weight: 600;
     padding: 8px 0;
     transition: all;
     transition-duration: 300ms;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(51, 81, 122, 0);
 }
 
 nav ul li a:hover {
-    color: black;
-    border-bottom: 1px solid black;
+    color: rgb(51, 80, 122);
+    border-bottom: 1px solid rgb(51, 80, 122);
 }
 
 @media only screen and (max-width: 768px) {
@@ -77,12 +81,184 @@ nav>a {
     border: 1px solid;
 }
 
-.banner-container {
-    height: 350px;
-    width: 100%;
-    border: 1px solid;
+/* css font style */
+h1 {
+    font-family: math;
+    font-weight: bold;
+    font-size: xx-large;
+    color: aliceblue;
 }
 
+p {
+    font-weight: bolder;
+    font-family: system-ui;
+    color: rgb(193, 198, 223);
+}
+
+td {
+    font-family: system-ui;
+    font-weight: 600;
+    color: rgb(193, 198, 223);
+}
+
+/* css banner autoslide */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+
+
+.container {
+    padding: 100px 0 0 0;
+}
+
+/* Slideshow container */
+.content-slide {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 540px;
+    width: 960px;
+}
+
+.imgslide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width:100%;height: 400px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: #fafafa;
+    font-size: 35px;
+    padding: 6px 9px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.desc-banner {
+    font-weight: bolder;
+    font-family: system-ui;
+    color: rgb(193, 198, 223); 
+    font-size: 15px;
+    padding: 4px 6px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.content-slide .numberslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* resposive */
+
+@media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+.container .page {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+    background-color: #ce0000;
+}
+
+
+
+
+/* css our profile */
 .profile-content {
     display: flex;
     justify-content: space-evenly;
@@ -118,4 +294,19 @@ nav>a {
 
 .divider {
     flex: 2;
+}
+
+/** css footer **/
+.judul-footer {
+    font-family: math;
+    font-weight: 200;
+    font-size: small;
+    color: rgb(193, 198, 223);
+}
+
+.desc-footer {
+    font-weight: 400;
+    font-size: smaller;
+    font-family: math;
+    color: rgb(193, 198, 223);
 }
