@@ -9,7 +9,7 @@ body {
 }
 
 /* Navigation Bar */
-.nav-container {
+nav {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -39,26 +39,26 @@ nav ul li a:hover {
     border-bottom: 1px solid rgb(51, 80, 122);
 }
 
+.menu-icon {
+    /* background-color: tomato; */
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         flex-wrap: wrap;
-        position: fixed;
-        width: 100%;
-        top: 0;
-      }
-    
+    }
     nav ul {
         flex-direction: column;
         width: 100%;
-      }
-    
-    nav ul li:last-of-type {
-        padding-bottom: 8px;
-      }
-    
+    }
+
     nav ul.hidden {
         display: none;
-      }
+    }
 
     .menu-icon {
         display: flex;
@@ -70,7 +70,7 @@ nav ul li a:hover {
     width: 50px;
 
     /* For image icon */
-    background-image: url(https://tse3.mm.bing.net/th?id=OIP.Eu08-jIB3t4MF1dF29yQGAHaHa&pid=Api&P=0&h=180);
+    background-image: url(../assets/7.jpeg);
     background-size: cover;
     border-radius: 50%;
 }
@@ -79,6 +79,17 @@ nav>a {
     padding-left: 30px;
     padding-right: 30px;
     border: 1px solid;
+}
+
+/* Home Header */
+section#home {
+    padding: 3rem 2rem;
+    padding-bottom: 75px;
+}
+
+section#profile {
+    padding: 1rem 2rem;
+    padding-bottom: 50px;
 }
 
 /* css font style */
@@ -195,7 +206,7 @@ img {
 
 /* resposive */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     .content-slide {
         padding: 8px 50px 12px 50px;
@@ -204,8 +215,7 @@ img {
     .next {
         right: 50px;
         border-radius: 3px 0 0 3px;
-    }
-    
+    }    
 }
 
 .fade {
@@ -255,13 +265,11 @@ img {
     background-color: #ce0000;
 }
 
-
-
-
 /* css our profile */
 .profile-content {
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .profile-item {
